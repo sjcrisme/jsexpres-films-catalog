@@ -1,6 +1,8 @@
-# Testmaterial
+<<<<<<< HEAD
+# This is Test ANGULAR2 homework of http://courses.jsexpert.net
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.1.
+                                [Angular Material] (https://material.angular.io/)     version 2.0.0.beta3
 
 ## Development server
 
@@ -26,3 +28,6 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+=======
+# jsexpres-films-catalog
+>>>>>>> 7032f5e7a674b89b640f40b237c5a2819c2cfe19
