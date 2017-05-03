@@ -1,5 +1,5 @@
 # This is Test **[ANGULAR2 homework] of jsexpert** (http://courses.jsexpert.net)
-[![alt text](https://material.angular.io/assets/img/homepage/sprintzerotoapp.svg)
+![alt text](https://material.angular.io/assets/img/homepage/sprintzerotoapp.svg)
 <p align="justify">
 This project was generated with **[Angular CLI]**(https://github.com/angular/angular-cli) version 1.0.1.
                                 **[Angular Material]** (https://material.angular.io/)     version 2.0.0.beta3  
