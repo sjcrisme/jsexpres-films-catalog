@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FilmCardService } from '../services/film-card.service';
 
 @Component({
   selector: 'app-film-card',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./film-card.component.css']
 })
 export class FilmCardComponent implements OnInit {
+  filmlist:Object[]=[];
 
-  constructor() { }
+  constructor(private filmCardService:FilmCardService) { }
 
   ngOnInit() {
+     this.filmCardService.getFilms().subscribe(data=>{
+      this.filmlist = data;
+    })
   }
 
 }

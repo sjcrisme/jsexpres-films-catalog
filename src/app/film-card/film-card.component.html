@@ -1,42 +1,23 @@
 <md-grid-list cols="2" rowHeight="550px">
-<md-grid-tile>
-			<md-card class="dashboard-card">
-				<a >
-					<img md-card-image src="http://transphoto.ru/photo/05/40/17/540170.jpg">
-				</a>
-				<md-card-content>
-					<md-card-title>Список задач</md-card-title>
-					<p>
-					Cписок задач, которые вы бы хотели сохранить и не забыть из реализовать в будующем.
-					</p>
-				</md-card-content>
-				<md-card-actions>
-					<button md-button>Смотреть задачи</button>
-				</md-card-actions>
-				
-			</md-card>
-
-		</md-grid-tile>
-    <md-grid-tile>
-
-			<md-card class="dashboard-card">
-				<a >
-					<img md-card-image src="./assets/images/statistics.jpg">
-				</a>
-				<md-card-content>
-					<md-card-title>Статистика</md-card-title>
-					<p>
-					Здесь вы сможете увидеть статистическую информацию, которая касается всех ваших задач
-					</p>
-				</md-card-content>
-				<md-card-actions>
-					<button md-button>Смотреть статистику</button>
-				</md-card-actions>
-			</md-card>
-
-
-		</md-grid-tile>
-	</md-grid-list>
+	
+    <md-grid-tile *ngFor="let film of filmlist">
+		<md-card class="dashboard-card">
+			<a>
+				<img md-card-image [src]="film.Poster">
+			</a>
+			<md-card-content>
+				<md-card-title>{{film.Title}}</md-card-title>
+				<p>
+				{{film.Year}}
+				</p>
+			</md-card-content>
+			<md-card-actions>
+				<button md-button>Смотреть детально</button>
+			</md-card-actions>
+		</md-card>
+	</md-grid-tile>
+	<br>
+</md-grid-list>
 <!--	<md-grid-list cols="2" rowHeight="550px">
 		<md-grid-tile>
 
